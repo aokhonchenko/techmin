@@ -8,10 +8,10 @@ public class StatEx {
     StatEx ex1 = new StatEx();
     StatEx ex2 = new StatEx();
 
-    System.out.println(ex1.a);  // 8
+    System.out.println(ex1.a); // 8
 
     ex2.a = 10;
-    System.out.println(ex1.a);  // 10
+    System.out.println(ex1.a); // 10
 
     StatEx.a = 12;
     System.out.println(ex1.a);
