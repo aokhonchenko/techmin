@@ -36,13 +36,15 @@ public class Loops {
     System.out.println(start);
     System.out.println(LocalDateTime.now());
 
-    List<String> arr = new ArrayList() {{
-      add("aaa");
-      add("bvvv");
-    }};
+    List<String> arr =
+        new ArrayList() {
+          {
+            add("aaa");
+            add("bvvv");
+          }
+        };
     System.out.println(arr);
     arr.add(2, "ffff");
     System.out.println(arr);
-
   }
 }
