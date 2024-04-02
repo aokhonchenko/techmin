@@ -1,9 +1,11 @@
 package ru.x5.techmin.less2;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.IntStream;
 
-public class Circles {
+public class Loops {
 
   public static void main(String[] args) {
 
@@ -29,11 +31,18 @@ public class Circles {
     //    }
     //    System.out.println(s);
 
-    LocalDateTime  start = LocalDateTime.now();
+    LocalDateTime start = LocalDateTime.now();
     IntStream.range(0, 100).forEach(System.out::println);
     System.out.println(start);
     System.out.println(LocalDateTime.now());
 
-  }
+    List<String> arr = new ArrayList() {{
+      add("aaa");
+      add("bvvv");
+    }};
+    System.out.println(arr);
+    arr.add(2, "ffff");
+    System.out.println(arr);
 
+  }
 }
